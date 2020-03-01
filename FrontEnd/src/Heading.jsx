@@ -7,14 +7,11 @@ class Heading extends React.Component {
             <header>
                 <center>
                     <h1 style={{ fontFamily: "Pacifico", color: "black" }}>Edgistify</h1>
-                    <Link to="/">Home</Link>
+                    <span><Link style={{ color: '#f5ba13' }} to="/">Home</Link></span>
                     <span style={{ marginLeft: '2rem' }}>
-                        {this.props.loggedIn ? (<Link to="/login">Logout</Link>) : (<Link to="/login">Login</Link>)}
+                        {this.props.loggedIn ? (<Link style={{ color: '#f5ba13' }} to="/login">Logout</Link>) : (<Link style={{ color: '#f5ba13' }} to="/login">Login</Link>)}
                     </span>
                 </center>
-                {/* <div style={{width: '100%'}}> */}
-                {/* </div> */}
-                {/* style={{fontStyle: 'normal'}}>Login</p> */}
             </header>
         );
     }
