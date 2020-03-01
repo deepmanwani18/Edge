@@ -46,7 +46,7 @@ export default class Register extends React.Component {
                     this.setState({loggedIn: true});
                 }
             })
-            .catch(err => console.log(err));
+            .catch(err => alert('Already registered'));
         }
     }
 
