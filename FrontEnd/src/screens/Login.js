@@ -19,7 +19,6 @@ export default class App extends React.Component {
         
     }
 
-
     handleEmailChange = email => this.setState({email: email.target.value}); 
     handlePasswordChange = password => this.setState({password: password.target.value});
 
@@ -48,10 +47,9 @@ export default class App extends React.Component {
                     localStorage.setItem('Authorization', res.data.token)
                     this.setState({loggedIn : true})
                 } else {
-                    alert('Either email/password combination is incorrect or account is not verified. Check your email to verify the account. ')
                 }
             })
-            .catch(err => console.log(err));
+            .catch(err => alert('Either email/password combination is incorrect or account is not verified. Check your email to verify the account. '));
         }
 
     }
