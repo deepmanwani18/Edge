@@ -10,7 +10,7 @@ NOTE: Ensure that node and mongodb is installed on your system. Otherwise this w
 5. `cd ../BackEnd`
 6. Get a sendgrid key (sent to you using email to prevent account ban) and place it in `config/emailService.js` as per the screenshot.
 
-    ![Screenshot](http://13.235.43.83:4000/uploads/1583060187196.png)
+    ![Screenshot](https://drive.google.com/uc?export=view&id=1e1AK0Z1wmQbK6OVPsU_AvXAIrxCmS8UH)
 
 7. `npm install`
 8. `node index.js`
